@@ -1,0 +1,128 @@
+:root {
+ --green: #c3d4e3;
+ --white: #FFFFFF;
+ --black: #000000;
+}
+* {
+ color: var(--fontColor); font-family: helvetica;
+}
+body {
+ background: var(--bg);
+}
+
+ul {
+ font-family: helvetica;
+}
+li {
+ list-style: circle;
+}
+.list {
+ list-style: square;
+}
+#msg {
+ font-family: monospace;
+}
+.btn {
+ position: absolute;
+ top: 20px; left: 250px;
+ height: 50px; width: 50px;
+ border-radius: 50%; border: none;
+ color: var(--btnFontColor); background-color: var(--btnBg);
+}
+.btn:focus { outline-style: none;}
+
+.light-theme {
+ --bg: var(--green); --fontColor: var(--black);
+ --btnBg: var(--black); --btnFontColor: var(--white);
+}
+.dark-theme {
+ --bg: var(--black); --fontColor: var(--green);
+ --btnBg: var(--white); --btnFontColor: var(--black);
+}
+
+.nomeTitulo {
+    text-align: center;
+}
+
+.fotoPerfil {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: "132px"; 
+    height: "132px";
+}
+
+.tituloCargo {
+    text-align: left;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.github {
+    text-align: left;
+    font-weight: bold;
+}
+
+.tabela {
+    border-collapse: collapse; 
+    width: 100%; 
+    background-color: rgb(255, 255, 255); 
+    border-color: rgb(255, 255, 255); 
+    border-style: none; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 15px;
+    max-width: 500px;
+}
+
+
+
+input, textarea {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    color: black;
+    font-weight: bold;
+}
+
+.enviar {
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+}
+
+textarea {
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+
+form label {
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
